@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - RTI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/logo_rti_transparent.png">
+                <span class="logo-text">Racing Team ISEP</span>
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="equipe.html">Équipe</a></li>
+            <li><a href="activites.html">Activités</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="partenaires.html">Partenaires</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- TITLE -->
+<section class="gallery-header">
+    <h1>Galerie</h1>
+    <p>6H EMOS – Racing Team ISEP</p>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+
+    <img src="assets/images/1.png" class="gallery-img">
+    <img src="assets/images/2IMG_9440.png" class="gallery-img">
+    <img src="assets/images/3IMG_9623.png" class="gallery-img">
+    <img src="assets/images/4IMG_0073.png" class="gallery-img">
+    <img src="assets/images/5IMG_0086.png" class="gallery-img">
+    <img src="assets/images/6IMG_9818.png" class="gallery-img">
+    <img src="assets/images/7IMG_9827.png" class="gallery-img">
+    <img src="assets/images/8IMG_9494.png" class="gallery-img">
+    <img src="assets/images/9IMG_9530.png" class="gallery-img">
+    <img src="assets/images/10IMG_9564.png" class="gallery-img">
+    <img src="assets/images/11IMG_9423.png" class="gallery-img">
+    <img src="assets/images/12IMG_9536.png" class="gallery-img">
+    <img src="assets/images/13IMG_9452.png" class="gallery-img">
+    <img src="assets/images/14MG_9587 (1).png" class="gallery-img">
+    <img src="assets/images/15IMG_9473.png" class="gallery-img">
+    <img src="assets/images/16IMG_9570.png" class="gallery-img">
+    <img src="assets/images/17IMG_9907.png" class="gallery-img">
+    <img src="assets/images/18IMG_9470.png" class="gallery-img">
+    <img src="assets/images/19IMG_9583.png" class="gallery-img">
+    <img src="assets/images/20IMG_9593 (1).png" class="gallery-img">
+
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" id="lightbox-img">
+</div>
+
+<script>
+const images = document.querySelectorAll('.gallery-img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const close = document.querySelector('.close');
+
+images.forEach(img => {
+    img.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = img.src;
+    });
+});
+
+close.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+});
+
+lightbox.addEventListener('click', (e) => {
+    if (e.target !== lightboxImg) {
+        lightbox.style.display = 'none';
+    }
+});
+</script>
+
+<!-- NOUVEAU FOOTER MODERNE -->
+
+<footer class="footer-modern">
+
+    <div class="footer-container">
+
+        <!-- COLONNE 1 -->
+        <div class="footer-col">
+            <h3>Suivez-nous</h3>
+            <div class="footer-icons">
+                <a href="https://instagram.com/racingteamisep" target="_blank">
+                    <img src="assets/images/Instagram_icon.png">
+                </a>
+                <a href="https://iseplife.fr/club/378238" target="_blank">
+                    <img src="assets/images/icon.svg">
+                </a>
+            </div>
+        </div>
+
+        <!-- COLONNE 2 -->
+        <div class="footer-col">
+            <h3>Contact</h3>
+
+            <div class="footer-contact">
+                <img src="assets/images/Mail_(Apple)_logo.png">
+                <p>
+                    <a href="mailto:racingteamisep@gmail.com">
+                        racingteamisep@gmail.com
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+        <!-- COLONNE 3 -->
+        <div class="footer-col">
+            <h3>Racing Team ISEP</h3>
+            <p>Association de sport automobile</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Racing Team ISEP
+    </div>
+
+</footer>
+
+<script>
+window.addEventListener("scroll", function() {
+    const navbar = document.querySelector(".navbar");
+    navbar.classList.toggle("scrolled", window.scrollY > 50);
+});
+</script>
+
+</body>
+</html>

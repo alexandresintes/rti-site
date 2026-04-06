@@ -11,67 +11,139 @@
 
 <header>
     <nav class="navbar">
-        <a href="index.html" class="logo">
-            <img src="assets/images/logo_rti_transparent.png">
-        </a>
+        <div class="logo">
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/logo_rti_transparent.png">
+                <span class="logo-text">Racing Team ISEP</span>
+            </a>
+        </div>
 
         <ul class="nav-links">
             <li><a href="index.html">Accueil</a></li>
             <li><a href="equipe.html">Équipe</a></li>
-            <li><a href="#">Activités</a></li>
+            <li><a href="activites.html">Activités</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
             <li><a href="partenaires.html">Partenaires</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
 
-<section class="contact">
+<section class="contact-section">
+
     <h1>Contact</h1>
-    <h2>N'hésitez pas à nous contacter !</h2>
+    <p class="contact-subtitle">N'hésitez pas à nous contacter !</p>
 
-    <div class="contact-card">
-        <p><strong>Alexandre SINTES</strong></p>
-        <p>Président</p>
-        <p>07 87 03 43 53</p>
-        <p>alexandre.sintes@eleve.isep.fr</p>
+    <div class="contact-grid">
+
+        <!-- Alexandre -->
+        <div class="contact-card-premium">
+            <img src="assets/images/Photo Alexandre SINTES-4.png">
+            <h3>Alexandre SINTES</h3>
+            <span>Président</span>
+
+            <p>📞 07 87 03 43 53</p>
+            <p>alexandre.sintes@eleve.isep.fr</p>
+        </div>
+
+        <!-- Guillaume -->
+        <div class="contact-card-premium">
+            <img src="assets/images/DYdpMOl051f90jD3j2ASxy3CYZE4ZY.webp">
+            <h3>Guillaume MARLE</h3>
+            <span>Secrétaire Général</span>
+
+            <p>📞 06 52 58 38 13</p>
+            <p>guillaume.marle@eleve.isep.fr</p>
+        </div>
+
+        <!-- Louis -->
+        <div class="contact-card-premium">
+            <img src="assets/images/1736345658719.jpg">
+            <h3>Louis DESJOUIS</h3>
+            <span>Pôle Logistique</span>
+
+            <p>📞 07 68 68 88 53</p>
+            <p>louis.desjouis@eleve.isep.fr</p>
+        </div>
+
     </div>
 
-        <p><strong>Guillaume MARLE</strong></p>
-        <p>Secrétaire Général</p>
-        <p>06 52 58 38 13</p>
-        <p>guillaume.marle@eleve.isep.fr</p>
-    </div>
-
-    <h3>Où nous trouver ?</h3>
-    <p>28 Rue Notre Dame des Champs, 75006 Paris</p>
-
-    <a href="https://www.google.com/maps?q=28+Rue+Notre+Dame+des+Champs+75006+Paris" target="_blank">
-        <img src="assets/images/isep-building-ndc.jpg" class="map">
-    </a>
 </section>
 
-<footer class="footer">
-    <div class="footer-left">
-        <p>Suivez-nous</p>
-        <a href="https://www.instagram.com/racingteamisep/" target="_blank">
-            <img src="assets/images/Instagram_icon.png" class="footer-icon">
-        </a>
-        <a href="https://iseplife.fr/club/378238" target="_blank">
-            <img src="assets/images/icon.svg" class="footer-icon">
-        </a>
-        <a href="mailto:racingteamisep@gmail.com">
-            <img src="assets/images/Gmail-Embleme.png" class="footer-icon">
-        </a>
+<!-- LOCALISATION -->
+<section class="map-section">
+
+    <h2>Où nous trouver ?</h2>
+
+    <a href="https://www.google.com/maps?q=28+Rue+Notre+Dame+des+Champs+75006+Paris" target="_blank">
+        <img src="assets/images/map.png" class="map-premium">
+    </a>
+
+    <p class="address">28 Rue Notre Dame des Champs, 75006 Paris</p>
+
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+    <h2>Rejoindre la Racing Team ISEP</h2>
+    <p>Envie de participer à nos projets et compétitions ? Contactez-nous dès maintenant !</p>
+    <a href="mailto:racingteamisep@gmail.com" class="cta-button">Nous écrire</a>
+</section>
+
+<!-- NOUVEAU FOOTER MODERNE -->
+
+<footer class="footer-modern">
+
+    <div class="footer-container">
+
+        <!-- COLONNE 1 -->
+        <div class="footer-col">
+            <h3>Suivez-nous</h3>
+            <div class="footer-icons">
+                <a href="https://instagram.com/racingteamisep" target="_blank">
+                    <img src="assets/images/Instagram_icon.png">
+                </a>
+                <a href="https://iseplife.fr/club/378238" target="_blank">
+                    <img src="assets/images/icon.svg">
+                </a>
+            </div>
+        </div>
+
+        <!-- COLONNE 2 -->
+        <div class="footer-col">
+            <h3>Contact</h3>
+
+            <div class="footer-contact">
+                <img src="assets/images/Mail_(Apple)_logo.png">
+                <p>
+                    <a href="mailto:racingteamisep@gmail.com">
+                        racingteamisep@gmail.com
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+        <!-- COLONNE 3 -->
+        <div class="footer-col">
+            <h3>Racing Team ISEP</h3>
+            <p>Association de sport automobile</p>
+        </div>
+
     </div>
 
-    <div class="footer-center">
-        <a href="contact.html">Contact</a>
+    <div class="footer-bottom">
+        © 2026 Racing Team ISEP
     </div>
 
-    <div class="footer-right">
-        <p>Racing Team ISEP</p>
-    </div>
 </footer>
+
+<script>
+window.addEventListener("scroll", function() {
+    const navbar = document.querySelector(".navbar");
+    navbar.classList.toggle("scrolled", window.scrollY > 50);
+});
+</script>
 
 </body>
 </html>
